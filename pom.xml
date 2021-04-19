@@ -12,6 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suite>testng</suite>
 	</properties>
 
 
@@ -129,7 +130,7 @@
 				<version>2.21.0</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${project.build.directory}/${suite}.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<argLine>-javaagent:${project.build.directory}/agent/zebrunner-core-agent.jar</argLine>
 				</configuration>
