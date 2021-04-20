@@ -1,0 +1,6 @@
+reporting:
+ enabled: true
+ server:
+  hostname: <change-me>
+  access-token: <change-me>
+
